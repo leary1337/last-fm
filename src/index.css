@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 225px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    background-color: #000;
+}
+
+.header:before {
+    content: "";
+    flex: 1;
+}
+
+.header__logo {
+    text-decoration: none;
+    color: red;
+}
+
+.header__nav {
+    flex: 1;
+}
+
+.header__navItems {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.header__navItem {
+    color: #fff;
+    opacity: 0.85;
+    padding-right: 15px;
+}
+
+.header__navItem > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header__navItem:hover {
+    opacity: 1;
+}
+
+.content__section {
+    display: flex;
+    flex-direction: column;
+    padding: 48px 0;
+}
+
+.content__title {
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.content__subtitle {
+    margin-top: 48px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.content__subtitleLine {
+    margin-top: 18px;
+    width: 50px;
+    border: 1px solid #b90000;
+    align-self: center;
+}
+
+.content__artists {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(6, 1fr);
+    margin-top: 18px;
+}
+
+.content__artistItem {
+    width: 170px;
+    height: 224px;
+}
+
+.content__artistItemLogo {
+    border-radius: 50%;
+    height: 170px;
+    width: 170px;
+}
+
+.content__artistItemTitle {
+    margin-top: 12px;
+}
+
+.tags {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    color: #999;
+    font-size: 12px;
+    line-height: 18px;
+    margin-top: 3px;
+}
+
+.tag:nth-child(n+2):before {
+    content: "·";
+    font-weight: 400;
+    margin: 0 0.25em;
+}
+
+.content__tracks {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 33%);
+    margin-top: 18px;
+}
+
+.content__trackItem {
+    display: flex;
+    width: 370px;
+    height: 70px;
+}
+
+.content__trackItemRight {
+    margin-left: 15px;
+}
+
+.content__trackItemLogo {
+    width: 70px;
+    height: 70px;
+}
+
+.content__trackItemTitle {
+
+}
+
+.content__trackItemAuthor {
+
+}
+
+.footer {
+    padding-top: 48px;
+    background-color: #111;
+    color: #fff;
+}
+
+.footer__top .container {
+    display: flex;
+    padding-bottom: 48px;
+}
+
+.footer__topCol {
+    padding-right: 15px;
+    width: 20%;
+}
+
+.footer__topColTitle {
+    color: #666;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.footer__topColItems {
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer__topColItem a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.footer__topColItem a:hover {
+    text-decoration: underline;
+}
+
+.footer__bottom {
+    border-top: 1px solid #222;
+}
+
+.footer__bottom .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 0 48px 0;
+}
+
+.footer__bottomLeft {
+    padding-right: 15px;
+}
+
+.footer__bottomLeftLanguages {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footer__bottomLeftLanguages a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.footer__bottomLeftLanguages a:hover {
+    text-decoration: underline;
+}
+
+.footer__bottomLeftLanguageItem {
+    color: #666;
+    margin-right: 10px;
+}
+
+.activeElement {
+    color: #fff;
+    font-size: 14px;
+    line-height: 21px;
+}
+
+.footer__bottomLeftTimezone {
+    color: #666;
+    margin-top: 6px;
+}
+
+.footer__bottomLeftTags li {
+    color: #666;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.footer__bottomRight {
+    font-size: 12px;
+    line-height: 21px;
+    text-align: right;
+}
